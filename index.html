@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Cureofdeath</title>
+
+	<!-- Behavioral Meta Data -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	
+
+</head>
+<body>
+
+	<div class="head">
+		<nav class="navMenu">
+			<div class="con">
+				<a href="#">Home</a>
+				<a href="#">Work</a>
+				<a href="#">About</a>
+				<div class="dot"></div>
+			</div>
+		</nav>
+		
+	</div>
+
+	<div id="container" class="container">
+		<div id="scene">
+			<div class="layers" data-depth="0.30">
+				<img class="image" src="images/hello.png">
+			</div>
+			<div class="layers" data-depth="0.10">
+				<img class="image" src="images/cureofdeath.png">
+			</div>
+		</div>
+	</div>
+
+	
+
+	<div class="art1" alt="Null">
+		<img src="images/line1.png">
+		<div class="about" style="color:aliceblue; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-size: small;">
+			<p style="margin:0 "> Let's integrate our abstract ideas with technology and </p><p style="margin:0 ">build them on our artboards.</p>
+		</div>
+	</div>
+	
+	<div class="profile">
+		<div style="vertical-align: middle; margin: 10px;">
+			<a href="https://github.com/cureofdeath" target="_blank"><img src="images/GitHub.png" width="28"></a>
+		</div>
+		<div style="vertical-align: middle; margin: 10px;">
+			<a href="https://www.behance.net/cureofdeath/" target="_blank"><img src="images/Be.png" width="28"></a>
+		</div>
+		<div style="vertical-align: middle; margin: 10px;">
+			<a href="#" target="_blank"><img src="images/pinterest.png" width="28"></a>
+		</div>
+	</div>
+		<!-- Scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+	<script>
+		
+		// Pretty simple huh?
+		var scene = document.getElementById('scene');
+		var parallaxInstance = new Parallax(scene);
+
+	</script>
+
+</body>
+</html>

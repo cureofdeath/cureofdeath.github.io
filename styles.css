@@ -1,0 +1,112 @@
+body {
+  background-color: #2A2A2A;
+  margin: 0;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 18px;
+}
+
+
+.head{
+  top: 0;
+  background-color: #f6f4e6;
+  padding-top: 2vh;
+  padding-right: 6vh;
+  background-color: #2A2A2A;
+  text-align: right;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+.navMenu { 
+  font-family: "Montserrat", sans-serif;
+}
+
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 80px;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #fddb3a;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateX(1250px);
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  transform: translateX(1300px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  transform: translateX(1385px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  transform: translateX(1470px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.image{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.container {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+.container #scene .layers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.container #scene .layers img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  object-fit: cover;
+}
+
+.profile{
+  float: right; 
+  padding-top: 75vh;
+}
+
+.about{
+  position:fixed;
+  top: 89vh;
+  left: 14vh;
+}
+
+.art1{
+  position: fixed;
+  top: 90vh;
+}
