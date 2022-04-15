@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 body {
   background-color: #2A2A2A;
   margin: 0;
@@ -16,9 +18,20 @@ body {
   text-align: right;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+.me{
+  font-family: "Montserrat", sans-serif;
+  color:aliceblue; 
+  font-size: small;
+}
+
 .navMenu { 
   font-family: "Montserrat", sans-serif;
+}
+
+.logo{
+  position: fixed;
+  left: 150px;
+
 }
 
 .navMenu a {
@@ -97,13 +110,7 @@ body {
 
 .profile{
   float: right; 
-  padding-top: 75vh;
-}
-
-.about{
-  position:fixed;
-  top: 89vh;
-  left: 14vh;
+  padding-top: 70vh;
 }
 
 .art1{
