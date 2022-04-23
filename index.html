@@ -7,23 +7,25 @@
 	<title>Cureofdeath</title>
 
 	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="images/logo.png">
+	<link rel="icon" type="image/png" href="./src/images/logo.png">
 
 	<!-- Behavioral Meta Data -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 	<!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	<link rel="stylesheet" type="text/css" href="./src/navbar.css"/>
+	<link rel="stylesheet" type="text/css" href="./src/home.css"/>
 	
+
 </head>
 <body>
 
 	<div class="head">
 		<nav class="navMenu">
-			<img class="logo" src="images/logo_light.png" height="45px" onclick="home()">
-			<div class="con">
-				<a href="#">Home</a>
-				<a href="./ar/index.html">Work</a>
+			<img class="logo" src="./src/images/logo_light.png" height="45px" onclick="home()">
+			<div>
+				<a href="#" style="color: #fddb3a">Home</a>
+				<a href="./src/work.html">Work</a>
 				<a href="#">About</a>
 				<div class="dot"></div>
 			</div>
@@ -34,34 +36,35 @@
 	<div id="container" class="container">
 		<div id="scene">
 			<div class="layers" data-depth="0.40">
-				<img class="image" src="images/hello.png">
+				<img class="image" src="./src/images/hello.png">
 			</div>
 			<div class="layers" data-depth="0.15">
-				<img class="image" src="images/cureofdeath.png">
+				<img class="image" src="./src/images/cureofdeath.png">
 			</div>
 		</div>
 	</div>
 
-	<div class="profile">
+	<div class="profile ">
 		<div style="vertical-align: middle; margin: 20px;">
-			<a href="https://github.com/cureofdeath" target="_blank"><img src="images/GitHub.png" width="28" class="hover item-fade" /></a>
+			<a href="https://github.com/cureofdeath" target="_blank"><img src="./src/images/GitHub.png" width="28" class="hover item-fade" /></a>
 		</div>
 		<div style="vertical-align: middle; margin: 20px;">
-			<a href="https://www.behance.net/cureofdeath/" target="_blank"><img src="images/Be.png" width="28" class="hover item-fade" /></a>
+			<a href="https://www.behance.net/cureofdeath/" target="_blank"><img src="./src/images/Be.png" width="28" class="hover item-fade" /></a>
 		</div>
 		<div style="vertical-align: middle; margin: 20px;">
-			<a href="https://www.pinterest.com/cureofdeath/_created/" target="_blank"><img src="images/pinterest.png" width="28" class="hover item-fade" /></a>
+			<a href="https://www.pinterest.com/cureofdeath/_created/" target="_blank"><img src="./src/images/pinterest.png" width="28" class="hover item-fade" /></a>
 		</div>
 	</div>
 
 	<div class="art1" alt="Null">
 		<table>
 			<tr>
-				<td><img src="images/line1.png"></td>
-				<td><div class="me">Designer + Developer</div></td>
+				<td><img src="./src/images/line1a.png"></td>
+				<td><div class="me">Hello! I'm Rohit a designer</div></td>
 			</tr>
 		</table>
 	</div>
+	
 		<!-- Scripts -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 	<script>
@@ -72,7 +75,8 @@
 
 		function home() {
   		location.replace("#")
-		}
+}
+
 	</script>
 
 </body>
