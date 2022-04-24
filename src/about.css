@@ -3,23 +3,23 @@ body {
     margin: 0;
     overflow-x: hidden;
     overflow-y: auto;
-    font-size: 18px;
     font-family: "Montserrat", sans-serif;
   }
 
 .title{
+  position: relative;
     z-index: -1;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
     position: relative;
-    top: 10vh;
-    pointer-events: none;
+    top:15vh;
   }
 
 .txt{
     position:absolute;
+    font-size: 18px;
     top: 80vh;
     right: 0vh;
     width: 450px;
@@ -27,13 +27,52 @@ body {
     color: aliceblue;
 }
 
+@media (max-width:1000px ){
 
-.noselect{
-    -webkit-touch-callout: none; /* iOS Safari */
-      -webkit-user-select: none; /* Safari */
-       -khtml-user-select: none; /* Konqueror HTML */
-         -moz-user-select: none; /* Old versions of Firefox */
-          -ms-user-select: none; /* Internet Explorer/Edge */
-              user-select: none;
-                   cursor: default;
+  .title{
+    position: relative;
+      z-index: -1;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      position: relative;
+      top:15vh;
+    }
+  
+  .txt{
+      position:absolute;
+      font-size:smaller;
+      top: 280px;
+      right: 0px;
+      width:fit-content;
+      height:fit-content;
+      color: aliceblue;
   }
+
+}
+
+@media (max-width:600px ){
+
+  .title{
+    position: relative;
+      z-index: -1;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      position: relative;
+      top:15vh;
+    }
+  
+  .txt{
+      position:absolute;
+      font-size:smaller;
+      top: 280px;
+      left: 0px;
+      width:fit-content;
+      height:fit-content;
+      color: aliceblue;
+  }
+
+}
