@@ -1,17 +1,15 @@
 body {
   background-color: #2A2A2A;
   margin: 0;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: hidden;
   font-family: monospace;
-  font-size: 18px;
 }
 
 
 .me{
   font-family: "Montserrat", sans-serif;
   color:aliceblue; 
-  font-size: small;
+  font-size: 15px;
 }
 
 

@@ -7,6 +7,7 @@
   padding-top: 2vh;
   padding-right: 6vh;
   text-align: right;
+  z-index: 10;
 }
 
 .navMenu { 
