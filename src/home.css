@@ -48,7 +48,8 @@ body {
 }
 
 .profile{
-  float: right; 
+  position: fixed;
+  right: 0; 
   padding-top: 70vh;
 }
 
