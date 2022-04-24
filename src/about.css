@@ -23,11 +23,12 @@ body {
     right: 0vh;
     width: 500px;
     height: 100px;
-    color: aliceblue;
+    color: rgb(244, 244, 244);
 }
 
 .white{
-  color: aliceblue;
+  text-decoration: none; 
+  color: rgb(244, 244, 244);
 }
 
 @media (max-width:1000px ){
