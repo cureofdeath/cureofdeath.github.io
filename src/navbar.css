@@ -1,21 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 .head{
+
   position: sticky;
   top: 0;
-  background-color: #f6f4e6;
   padding-top: 2vh;
   padding-right: 6vh;
-  background-color: #2A2A2A;
   text-align: right;
 }
 
 .navMenu { 
-    font-family: "Montserrat", sans-serif;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
   }
   
   .logo{
-    position: fixed;
+    position: absolute;
     left: 5%;
   
   }
