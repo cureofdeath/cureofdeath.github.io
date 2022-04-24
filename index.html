@@ -23,7 +23,7 @@
 	<div class="head">
 		<nav class="navMenu">
 			<img class="logo" src="./src/images/logo_light.png" height="45px" onclick="home()">
-			<div>
+			<div class="items">
 				<a href="#" style="color: #fddb3a">Home</a>
 				<a href="./src/work.html">Work</a>
 				<a href="./src/about.html">About</a>
@@ -68,12 +68,14 @@
 		<!-- Scripts -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 	<script>
+		
+		// Pretty simple huh?
 		var scene = document.getElementById('scene');
 		var parallaxInstance = new Parallax(scene);
 
 		function home() {
-  		location.replace("http://cureofdeath.design/index.html")
-		}
+  		location.replace("./index.html")
+}
 
 	</script>
 
