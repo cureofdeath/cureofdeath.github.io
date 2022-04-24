@@ -3,9 +3,8 @@ body {
     margin: 0;
     overflow-x: hidden;
     overflow-y: auto;
-    font-family: monospace;
     font-size: 18px;
-
+    font-family: "Montserrat", sans-serif;
   }
 
 .title{
@@ -21,25 +20,13 @@ body {
 
 .txt{
     position:absolute;
-    top: 90vh;
+    top: 80vh;
     right: 0vh;
     width: 450px;
     height: 100px;
     color: aliceblue;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
 }
 
-.itm1{
-    z-index: -1;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    position: relative;
-    top: 20vh;
-    padding-bottom: 20vh;
-}
 
 .noselect{
     -webkit-touch-callout: none; /* iOS Safari */
