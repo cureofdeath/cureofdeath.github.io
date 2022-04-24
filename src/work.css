@@ -5,23 +5,37 @@ body {
     overflow-y: auto;
     font-family: monospace;
     font-size: 18px;
+
   }
 
 .title{
+    z-index: -1;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 75%;
     position: relative;
-    top: 10vh;
-}
+    top: 15vh;
+    pointer-events: none;
+  }
 
 .itm1{
+    z-index: -1;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     position: relative;
-    top: 20vh;
+    top: 40vh;
     padding-bottom: 20vh;
 }
+
+.noselect{
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none;
+                   cursor: default;
+  }
