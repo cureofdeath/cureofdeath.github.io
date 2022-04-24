@@ -22,8 +22,8 @@
 
     <div class="head">
 		<nav class="navMenu">
-			<img class="logo" src="./images/logo_light.png" height="45px" onclick="home()">
-			<div>
+			<img class="logo" src="./images/logo_light.png" height="45px">
+			<div class="items">
 				<a href="../index.html">Home</a>
 				<a href="./work.html" style="color: #fddb3a">Work</a>
 				<a href="./about.html">About</a>
@@ -33,21 +33,24 @@
 	</div>
 
     <div class="title">
-        <img src="./images/work.png"/>     
+        <img src="./images/work.png" width="70%"/>     
     </div>
 
     <div class="itm1">
 			<div id="scene">
 				<div class="layers" data-depth="0">
-					<img class="image" src="./images/inv_low.png">
+					<img class="image" width="100%" src="./images/inv_low.png">
 				</div>
 				<div class="layers" data-depth="0.25">
-					<img class="image" src="./images/inv_up.png">
+					<img class="image" width="100%" src="./images/inv_up.png">
 				</div>
 			</div>
     </div>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 	<script>
+		
+		// Pretty simple huh?
 		var scene = document.getElementById('scene');
 		var parallaxInstance = new Parallax(scene);
 
