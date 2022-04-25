@@ -31,6 +31,17 @@ body {
   color: rgb(244, 244, 244);
 }
 
+.hover:hover {
+  opacity: 1;
+}
+
+.item-fade {
+  opacity: 0.4;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
 @media (max-width:1000px ){
 
   .title{
