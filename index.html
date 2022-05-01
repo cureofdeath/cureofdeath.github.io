@@ -1,83 +1,53 @@
 <!DOCTYPE html>
+
 <html>
-<head>
+  <head>
+    <title>Vector: A-Frame & AR.js</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css">
 
-	<meta charset="utf-8">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="gesture-detector.js"></script>
+    <script src="gesture-handler.js"></script>
+  </head>
 
-	<title>Cureofdeath</title>
+  <body>
+    <a-scene
+      arjs
+      embedded
+      renderer="logarithmicDepthBuffer: true;"
+      vr-mode-ui="enabled: false"
+      gesture-detector
+      id="scene"
+    >
+      <a-assets>
+        <a-asset-item
+          id="bowser"
+          src="tree.glb"
+        >
+        </a-asset-item>
+      </a-assets>
 
-	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="./src/images/logo.png">
-
-	<!-- Behavioral Meta Data -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-
-	<!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="./src/navbar.css"/>
-	<link rel="stylesheet" type="text/css" href="./src/home.css"/>
-	
-
-</head>
-<body>
-
-	<div class="head">
-		<nav class="navMenu">
-			<img class="logo" src="./src/images/logo_light.png" height="45px" onclick="home()">
-			<div class="items">
-				<a href="#" style="color: #fddb3a">Home</a>
-				<a href="./src/work.html">Work</a>
-				<a href="./src/about.html">About</a>
-				<div class="dot"></div>
-			</div>
-		</nav>
-		
-	</div>
-
-	<div id="container" class="container">
-		<div id="scene">
-			<div class="layers" data-depth="0.40">
-				<img class="image" src="./src/images/hello.png">
-			</div>
-			<div class="layers" data-depth="0.15">
-				<img class="image" src="./src/images/cureofdeath.png">
-			</div>
-		</div>
-	</div>
-
-	<div class="profile">
-		<div style="vertical-align: middle; margin: 20px;">
-			<a href="https://github.com/cureofdeath" target="_blank"><img src="./src/images/GitHub.png" width="28" class="hover item-fade" /></a>
-		</div>
-		<div style="vertical-align: middle; margin: 20px;">
-			<a href="https://www.behance.net/cureofdeath/" target="_blank"><img src="./src/images/Be.png" width="28" class="hover item-fade" /></a>
-		</div>
-		<div style="vertical-align: middle; margin: 20px;">
-			<a href="https://www.pinterest.com/cureofdeath/_created/" target="_blank"><img src="./src/images/pinterest.png" width="28" class="hover item-fade" /></a>
-		</div>
-	</div>
-
-	<div class="art1">
-		<table>
-			<tr>
-				<td><img src="./src/images/line1a.png"></td>
-				<td><div class="me">Hello! I'm Rohit a graphic & UI/UX designer</div></td>
-			</tr>
-		</table>
-	</div>
-	
-		<!-- Scripts -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-	<script>
-		
-		// Pretty simple huh?
-		var scene = document.getElementById('scene');
-		var parallaxInstance = new Parallax(scene);
-
-		function home() {
-  		location.replace("./index.html")
-}
-
-	</script>
-
-</body>
+      <a-marker
+        preset="hiro"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="markerA"
+      >
+        <a-entity
+          id="bowser-model"
+          gltf-model="#bowser"
+          position="0 0 0"
+          scale="0.5 0.5 0.5"
+          class="clickable"
+          gesture-handler
+        >
+        </a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
 </html>
